@@ -6,6 +6,7 @@ import { HeroButton } from '@/components/HeroButton';
 import { HeroTitle } from '@/components/HeroTitle';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { CopyToClipboard } from '@/components/CopyToClipboard';
 
 export default function Home() {
 
@@ -26,7 +27,9 @@ export default function Home() {
       </section>
       <MainSection>
         <SecondarySection>
-          <h3>Example Input:</h3>
+          <h3 className="flex flex-row w-full justify-between items-center">Place Your Input:
+            <CopyToClipboard text={JSON.stringify(data, null, 2)}/>
+          </h3>
           <pre className="overflow-auto">
             <code className="bg-clip-text text-transparent bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 font-bold
             dark:bg-gradient-to-r dark:from-blue-400 dark:to-emerald-400
