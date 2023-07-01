@@ -11,7 +11,7 @@ import { HeroTitle } from '@/components/HeroTitle';
 export default function Test() {
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start px-24 py-12 gap-8">
+    <main className="flex min-h-screen flex-col items-center justify-start px-[5%] md:px-24 py-12 gap-8">
       <section className="flex flex-col w-1/2 justify-center items-center gap-8">
         <HeroTitle />
         <HeroButton />
