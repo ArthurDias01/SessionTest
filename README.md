@@ -96,8 +96,8 @@ Notes
 ## Solution:
 
 - [x] Createad a landing page showing example data input and output.
-- [x] <https://vercelpage/test> page to test your own data.
-- [x] Created an API (POST) end-point to test as an api sending the data through the body as a JSON content the end-point is: <https://vercelpage/api/test> .
+- [x] [Session Link for APP](https://session-test.vercel.app/) page to test your own data.
+- [x] Created an API (POST) end-point to test as an api sending the data through the body as a JSON content the end-point is: [Session Link for APP/API](https://session-test.vercel.app/api/test) .
 
 ## Solution Function Explained:
 
