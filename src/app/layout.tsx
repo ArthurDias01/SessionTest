@@ -23,7 +23,7 @@ export default function RootLayout({
             <header className="flex flex-1 w-full border-b-2 border-slate-200 dark:border-slate-800 flex-row justify-end px-[10%] py-4">
               <ToggleTheme />
             </header>
-            <h1 className="bg-clip-text text-transparent text-6xl font-bold text-center bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 pt-12">
+            <h1 className="bg-clip-text text-transparent text-6xl font-bold text-center bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 dark:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] dark:from-sky-400 dark:to-indigo-600 pt-12">
               Welcome to Session Test!
             </h1>
             {children}

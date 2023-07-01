@@ -3,18 +3,16 @@ import { FormProvider } from '../../contexts/form-context';
 
 
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
-        <FormProvider>
-          {children}
-        </FormProvider>
-      </body>
-    </html>
+    <section>
+      <FormProvider>
+        {children}
+      </FormProvider>
+    </section>
   )
 }

@@ -45,7 +45,16 @@ const inputSchema = z.object({
 export const FormProvider = ({ children }: Props) => {
   const [inputText, setInputText] = useState('');
 
-  const parsedInput = inputSchema.safeParse(inputText !== "" ? JSON.parse(inputText) : "");
+  function isJsonString(str: string) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
+
+  const parsedInput = inputSchema.safeParse(inputText !== "" && isJsonString(inputText) ? JSON.parse(inputText) : "");
 
   const error = parsedInput.success ? undefined : parsedInput.error;
 
