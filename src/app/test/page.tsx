@@ -15,18 +15,23 @@ export default function Test() {
       <section className="flex flex-col w-1/2 justify-center items-center gap-8">
         <HeroTitle />
         <HeroButton />
+        <Link href="https://github.com/ArthurDias01/SessionTest">
+          <Button variant="link">
+            Visit source code
+          </Button>
+        </Link>
       </section>
       <article className="flex flex-col justify-center items-center gap-8 w-full">
         <MainSection>
           <SecondarySection>
             <h2>Place Your Input:</h2>
-            <pre>
+            <pre className="overflow-auto">
               <Input />
             </pre>
           </SecondarySection>
           <SecondarySection>
             <h2>OUTPUT:</h2>
-            <pre>
+            <pre className="overflow-auto">
               <TransformedData />
             </pre>
           </SecondarySection>
